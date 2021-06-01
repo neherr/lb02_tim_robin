@@ -4,3 +4,24 @@ footer{
 
 
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.title {
+    font-size: 50pt;
+}
+
+.picture {
+    height: 500px;
+    width: 500px;
+}
+
+.div_picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
