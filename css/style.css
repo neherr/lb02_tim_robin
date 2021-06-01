@@ -9,6 +9,7 @@ footer{
     display: flex;
     justify-content: center;
     margin: 100px;
+    border-bottom: black    solid   1px;
 }
 
 .title {
