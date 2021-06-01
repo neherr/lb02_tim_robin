@@ -1,8 +1,7 @@
-footer{
+.footer{
     display: flex;
-    justify-content: space-between;
-
-
+    justify-content: space-around;
+    padding: 40px;
 }
 
 .header {
@@ -26,3 +25,20 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
+.startseite-header{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: comfortaa;
+}
+
+.untertitel{
+    display: flex;
+    justify-content: center;
+    font-family: comfortaa;
+    margin: 0px 0px 40px 0px;
+}.beschreibungs-text{
+    text-align: center;
+    margin: 0px 40px 0px 40px;
+ }
