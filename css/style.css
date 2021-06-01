@@ -1,8 +1,5 @@
-.text12{
-    color: #dae0e5;
-}
-
-.titel1 {
-    font-family: comfortaa;
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
