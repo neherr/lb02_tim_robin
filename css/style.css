@@ -38,7 +38,29 @@
     justify-content: center;
     font-family: comfortaa;
     margin: 0px 0px 40px 0px;
+
 }.beschreibungs-text{
     text-align: center;
-    margin: 0px 40px 0px 40px;
+
+    width: 1000px;
  }
+ .untertitel-text{
+     display: flex;
+     justify-content: center;
+     margin: 0px 0px 100px 0px;
+ }
+
+.carousel-item{
+    height: 32rem;
+    background-color: grey;
+    color:white;
+}
+.overlay-image{
+    opacity: 0.5;
+    background-size: cover;
+}
+
+.carousel {
+    width: 1000px;
+    height: 500px;
+}
