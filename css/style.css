@@ -28,7 +28,7 @@
 .startseite-header{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 25px 0px 0px 0px;
     font-size: 50px;
     font-family: comfortaa;
 }
@@ -52,7 +52,7 @@
 
 .carousel-item{
     height: 32rem;
-    background-color: grey;
+    background-color: black;
     color:white;
 }
 .overlay-image{
@@ -63,4 +63,7 @@
 .carousel {
     width: 1000px;
     height: 500px;
+    margin: auto;
+    margin-bottom: 100px;
+
 }
