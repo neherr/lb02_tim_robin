@@ -1,7 +1,22 @@
 .footer{
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #5c636a;
+
+}
+a.footer-a{
+    color: white;
+    font-size: 16px;
+    font-family: comfortaa, light;
+    text-decoration: none;
+}
+a.footer-a:hover{
+    color: #9fcdff;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline: #9fcdff;
 }
 
 .header {
@@ -66,4 +81,17 @@
     margin: auto;
     margin-bottom: 100px;
 
+}
+
+.doku-video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.video-h3{
+    margin-bottom: 30px;
+}
+video{
+    width: 80%;
 }
