@@ -3,7 +3,7 @@
     justify-content: space-around;
     padding: 15px;
     margin-top: 40px;
-    background-color: #5c636a;
+    background-color: #264653;
 
 }
 a.footer-a{
@@ -13,10 +13,10 @@ a.footer-a{
     text-decoration: none;
 }
 a.footer-a:hover{
-    color: #9fcdff;
+    color: #e76f51;
     font-size: 18px;
     text-decoration: underline;
-    text-underline: #9fcdff;
+    text-underline: #e76f51;
 }
 
 .header {
@@ -25,7 +25,12 @@ a.footer-a:hover{
     margin: 100px;
     border-bottom: black    solid   1px;
 }
-
+h1{
+    color: #2a9d8f;
+}
+h2{
+    color: #e76f51;
+}
 .title {
     font-size: 50pt;
 }
@@ -64,7 +69,7 @@ a.footer-a:hover{
      justify-content: center;
      margin: 0px 0px 100px 0px;
  }
-
+/* alli 3 carousel */
 .carousel-item{
     height: 32rem;
     background-color: black;
@@ -94,4 +99,8 @@ a.footer-a:hover{
 }
 video{
     width: 80%;
+}
+/*nav*/
+.navbar{
+    color: #0b5ed7;
 }
