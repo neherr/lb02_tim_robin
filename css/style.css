@@ -30,7 +30,17 @@ h1{
 }
 h2{
     color: #e76f51;
+    font-family: comfortaa, bold;
+    padding-bottom: 20px;
 }
+
+h3{
+    color: #2a9d8f;
+    font-family: comfortaa, regular;
+    font-size: 12pt;
+    padding-top: 10px;
+}
+
 .title {
     font-size: 50pt;
 }
@@ -38,11 +48,12 @@ h2{
 .picture {
     height: 500px;
     width: 500px;
+    padding-bottom: 30px;
 }
 
 .div_picture {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 .startseite-header{
@@ -58,12 +69,14 @@ h2{
     justify-content: center;
     font-family: comfortaa;
     margin: 0px 0px 40px 0px;
+    #e76f51;
+}
 
-}.beschreibungs-text{
+.beschreibungs-text{
     text-align: center;
-
     width: 1000px;
  }
+
  .untertitel-text{
      display: flex;
      justify-content: center;
