@@ -225,7 +225,7 @@ video{
     margin-top: 50px;
 }
 
-main {
+.main_about {
     display: flex;
     justify-content: space-around;
 }
