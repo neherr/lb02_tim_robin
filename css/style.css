@@ -51,11 +51,6 @@ h3{
     padding-bottom: 30px;
 }
 
-.div_picture {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-}
 .startseite-header{
     display: flex;
     justify-content: center;
@@ -116,4 +111,125 @@ video{
 /*nav*/
 .navbar{
     color: #0b5ed7;
+}
+
+
+
+
+
+
+
+
+
+
+/********** Bilder Hover fancy **********/
+
+.bild {
+
+}
+
+
+.bilder {
+    width: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 0px;
+}
+
+.bilder .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bilder .box .imgbox {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    size: 50vw;
+}
+
+.bilder .box .imgbox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.bilder .box:hover .imgbox img {
+    transform: scale(1.2);
+}
+
+.bilder .box .details {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+
+.bilder .box:hover .details {
+    transform: scaleY(1);
+    text-decoration: none;
+}
+
+.bilder .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bilder .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.bilder .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.medienkompetenz {
+    font-family: comfortaa, regular;
+    margin: 0;
+    padding: 0;
+    font-size: 100pt;
+    text-decoration: none;
+}
+
+
+
+.overall {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.person {
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_picture {
+    margin-left: 50px;
 }
