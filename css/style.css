@@ -4,6 +4,7 @@
     padding: 15px;
     margin-top: 40px;
     background-color: #264653;
+    height: 50px;
 
 }
 a.footer-a{
@@ -14,7 +15,6 @@ a.footer-a{
 }
 a.footer-a:hover{
     color: #e76f51;
-    font-size: 18px;
     text-decoration: underline;
     text-underline: #e76f51;
 }
@@ -64,7 +64,7 @@ h3{
     justify-content: center;
     font-family: comfortaa;
     margin: 0px 0px 40px 0px;
-    #e76f51;
+    color: #e76f51;
 }
 
 .beschreibungs-text{
