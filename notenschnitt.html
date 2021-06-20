@@ -17,7 +17,7 @@
         note1 = document.getElementById("note-1").value;
         note2 = document.getElementById("note-2").value;
         note3 = document.getElementById("note-3").value;
-        resultat = (note1*gewichtung1+note2*gewichtung2+note3*gewichtung3)/(gewichtung1+gewichtung2+gewichtung3);
+        resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
         alert(resultat);
         }
 
@@ -48,22 +48,24 @@
 
 
     <main>
-        <form style="margin-top: 50px;">
-            <label>Note 1</label>
-            <input id="note-1">
-            <label>Gewichtung</label>
-            <input id="gewichtung-1"><br>
-            <label>Note 2</label>
-            <input id="note-2">
-            <label>Gewichtung</label>
-            <input id="gewichtung-2"><br>
-            <label>Note 3 </label>
-            <input id="note-3">
-            <label>Gewichtung</label>
-            <input id="gewichtung-3"> <br>
-            <button onclick="note_berechnen()">Berechnen</button>
-            <p id="resultat"></p>
-        </form>
+        <div>
+            <form style="margin-top: 50px;">
+                <label>Note 1</label>
+                    <input id="note-1">
+                <label>Gewichtung</label>
+                    <input id="gewichtung-1"><br>
+                <label>Note 2</label>
+                    <input id="note-2">
+                <label>Gewichtung</label>
+                    <input id="gewichtung-2"><br>
+                <label>Note 3 </label>
+                    <input id="note-3">
+                <label>Gewichtung</label>
+                    <input id="gewichtung-3"> <br>
+                <button onclick="note_berechnen()">Berechnen</button>
+                    <p id="resultat"></p>
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <a class="footer-a" href="mailto:federspielt@bzz.ch">Contact Tim</a>
