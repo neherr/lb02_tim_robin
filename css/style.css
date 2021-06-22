@@ -34,6 +34,13 @@ h2{
     padding-bottom: 20px;
 }
 
+.noten{
+    color: #e76f51;
+    font-family: comfortaa, bold;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
 h3{
     color: #2a9d8f;
     font-family: comfortaa, regular;
@@ -119,7 +126,9 @@ video{
 }
 
 
+.gewichtung{
 
+}
 
 
 
@@ -164,7 +173,7 @@ video{
 }
 
 .bilder .box .imgbox img {
-    max-width: 100%;
+    max-height: 100%;
     transition: transform 2s;
 }
 
@@ -240,6 +249,14 @@ video{
 }
 .rechner-feld{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.rechner-button{
+    margin-top: 50px;
+}
+.notenrechner {
+    display: flex;
+    flex-direction: row;
 }
 

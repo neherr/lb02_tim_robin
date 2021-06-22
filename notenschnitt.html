@@ -49,19 +49,33 @@
 
     <main>
         <div id="rechner" class="rechner-feld">
-            <form style="margin-top: 50px;">
-                <label>Note 1</label>
+            <form style="margin-top: 50px; width: 500px">
+
+               <h2 class="noten"><label>Note 1</label></h2>
                     <input id="note-1">
-                <label>Gewichtung</label>
+
+                <div class="notenrechner">
+                <label class="gewichtung">Gewichtung</label>
                     <input id="gewichtung-1"><br>
-                <label>Note 2</label>
+                </div>
+
+
+
+                <h2 class="noten"> <label>Note 2</label></h2>
                     <input id="note-2">
+
+                    <div class="notenrechner">
                 <label>Gewichtung</label>
                     <input id="gewichtung-2"><br>
-                <label>Note 3 </label>
+                </div>
+
+                <h2 class="noten"><label>Note 3 </label></h2>
                     <input id="note-3">
+
+                    <div class="notenrechner">
                 <label>Gewichtung</label>
                     <input id="gewichtung-3"> <br>
+                </div>
                 <button onclick="note_berechnen()" class="rechner-button">Berechnen</button>
                     <p id="resultat"></p>
             </form>
