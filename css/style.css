@@ -238,3 +238,8 @@ video{
 .div_picture {
     margin-left: 50px;
 }
+.rechner-feld{
+    display: flex;
+    justify-content: center;
+}
+
