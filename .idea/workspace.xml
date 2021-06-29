@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1t1nlnYOx9pY781sPnh8LQ4Czt5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tlfed\WebstormProjects\lb02_tim_robin\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="" />
+      <created>1621945616961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621945616961</updated>
+      <workItem from="1621945620081" duration="308000" />
+      <workItem from="1622546910484" duration="4040000" />
+      <workItem from="1622971468332" duration="2379000" />
+      <workItem from="1623137264865" duration="199000" />
+      <workItem from="1623153978323" duration="4963000" />
+      <workItem from="1623757052970" duration="749000" />
+      <workItem from="1624343811030" duration="677000" />
+      <workItem from="1624359952961" duration="4605000" />
+      <workItem from="1624606842506" duration="624000" />
+      <workItem from="1624964582822" duration="3542000" />
+    </task>
+    <task id="LOCAL-00001" summary="fjdkjfid">
+      <created>1622547005459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622547005459</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fjdkjfiddedd">
+      <created>1622547516639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622547516639</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first addid">
+      <created>1622550126432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622550126432</updated>
+    </task>
+    <task id="LOCAL-00004" summary="day 1 finish">
+      <created>1622550954498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622550954498</updated>
+    </task>
+    <task id="LOCAL-00005" summary="about finish">
+      <created>1622973988960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622973988960</updated>
+    </task>
+    <task id="LOCAL-00006" summary="about hover">
+      <created>1623158531259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623158531259</updated>
+    </task>
+    <task id="LOCAL-00007" summary="about hover korrektur">
+      <created>1623158751903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623158751903</updated>
+    </task>
+    <task id="LOCAL-00008" summary="about hover korrektur">
+      <created>1624365367402</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624365367403</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bilder galerie korrektur">
+      <created>1624966646765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624966646765</updated>
+    </task>
+    <task id="LOCAL-00010" summary="notenberechner styling">
+      <created>1624967582272</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624967582272</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fjdkjfid" />
+    <MESSAGE value="fjdkjfiddedd" />
+    <MESSAGE value="first addid" />
+    <MESSAGE value="day 1 finish" />
+    <MESSAGE value="about finish" />
+    <MESSAGE value="about hover" />
+    <MESSAGE value="about hover korrektur" />
+    <MESSAGE value="bilder galerie korrektur" />
+    <MESSAGE value="notenberechner styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="notenberechner styling" />
+  </component>
+</project>
