@@ -8,20 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script>
-        let note1 = 0, note2 = 0, note3 = 0;
-        let gewichtung1 = 1, gewichtung2 = 1, gewichtung3 = 1;
-        let resultat = 0;
 
-        function note_berechnen(){
-        note1 = document.getElementById("note-1").value;
-        note2 = document.getElementById("note-2").value;
-        note3 = document.getElementById("note-3").value;
-        resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
-        alert(resultat);
-        }
-
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #264653;">
@@ -48,61 +35,88 @@
         </div>
     </nav>
 
-
     <main>
+        <header>
+            <h1 class="startseite-header">Notenschnitt berechnen</h1>
+        </header>
+        <p class="untertitel-text">
+            Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung. <br>
+            Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2 <br>
+            Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld auch leer lassen.
+        </p>
+
         <div id="rechner" class="rechner-feld">
             <form style="margin-top: 50px; width: 500px">
-
-
                <h2 class="noten"><label>Note 1</label></h2>
                 <div class="notennn">
                 <label class="gewichtung"> Note:</label>
                     <input id="note-1">
 
-                <div class="notenrechner">
-                <label class="gewichtung_0">Gewichtung:</label>
-                    <input id="gewichtung-1"><br>
-                </div>
-                </div>
-
-
-
-                <h2 class="noten"> <label>Note 2</label></h2>
-                <div class="notennn">
-                <label class="gewichtung"> Note:</label>
-                    <input id="note-2">
-
                     <div class="notenrechner">
-                <label class="gewichtung_0">Gewichtung:</label>
-                    <input id="gewichtung-2"><br>
-                </div>
-                </div>
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-1"><br>
+                    </div>
+                    </div>
 
 
-                <h2 class="noten"><label>Note 3 </label></h2>
-                <div class="notennn">
-                <label class="gewichtung"> Note:</label>
-                    <input id="note-3">
 
-                    <div class="notenrechner">
-                <label class="gewichtung_0">Gewichtung:</label>
-                    <input id="gewichtung-3"> <br>
-                </div>
-                </div>
+                    <h2 class="noten"> <label>Note 2</label></h2>
+                    <div class="notennn">
+                    <label class="gewichtung"> Note:</label>
+                        <input id="note-2">
+
+                        <div class="notenrechner">
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-2"><br>
+                    </div>
+                    </div>
 
 
-                <button onclick="note_berechnen()" class="rechner-button">Berechnen</button>
-                    <p id="resultat"></p>
+                    <h2 class="noten"><label>Note 3 </label></h2>
+                    <div class="notennn">
+                    <label class="gewichtung"> Note:</label>
+                        <input id="note-3">
+
+                        <div class="notenrechner">
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-3"> <br>
+                    </div>
+                    </div>
+
+
+
             </form>
+
         </div>
+        <span class="button-span">
+            <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button>
+        </span>
     </main>
+
+    <script>
+        function note_berechnen(){
+            let note1 = 0, note2 = 0, note3 = 0;
+            let gewichtung1 = 1, gewichtung2 = 1, gewichtung3 = 1;
+            let resultat = 0;
+
+            note1 = document.getElementById("note-1").value;
+            note2 = document.getElementById("note-2").value;
+            note3 = document.getElementById("note-3").value;
+            resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
+
+            alert("Dein Notenschnitt beträgt: "+resultat);
+
+
+        }
+    </script>
+
     <footer class="footer">
         <a class="footer-a" href="mailto:federspielt@bzz.ch">Contact Tim</a>
         <a class="footer-a" href="mailto:contact@robinneher.ch">Contact Robin</a>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </body>
 </html>

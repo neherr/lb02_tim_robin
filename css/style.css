@@ -1,3 +1,6 @@
+body{
+    font-family: comfortaa;
+}
 .footer{
     display: flex;
     justify-content: space-around;
@@ -82,7 +85,7 @@ h3{
  .untertitel-text{
      display: flex;
      justify-content: center;
-     margin: 0px 0px 100px 0px;
+     margin: 30px 0px 30px 0px;
  }
 /* alli 4 carousel */
 .carousel-item{
@@ -261,6 +264,7 @@ video{
     justify-content: space-around;
 }
 
+
 .div_picture {
     margin-left: 50px;
 }
@@ -269,8 +273,11 @@ video{
     justify-content: space-around;
 }
 
-.rechner-button{
+
+.button-span{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 .notenrechner {
     display: flex;
