@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/pulver_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/stapel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +11,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a80acaf3-b302-4456-98e4-3a6da0e83298" />
   </component>
   <component name="ProjectId" id="1t1nlnYOx9pY781sPnh8LQ4Czt5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,7 +52,7 @@
       <workItem from="1624359952961" duration="4605000" />
       <workItem from="1624606842506" duration="624000" />
       <workItem from="1624964582822" duration="3542000" />
-      <workItem from="1640004533903" duration="71000" />
+      <workItem from="1640004533903" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -123,7 +124,28 @@
       <option name="project" value="LOCAL" />
       <updated>1624967582272</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test">
+      <created>1640004659721</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640004659721</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <created>1640004746868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640004746868</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test">
+      <created>1640004861377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640004861377</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +161,7 @@
     <MESSAGE value="about hover korrektur" />
     <MESSAGE value="bilder galerie korrektur" />
     <MESSAGE value="notenberechner styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="notenberechner styling" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
