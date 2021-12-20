@@ -85,33 +85,14 @@
                         <input id="gewichtung-3"> <br>
                     </div>
                     </div>
-
-
-
             </form>
-
         </div>
         <span class="button-span">
             <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button>
         </span>
     </main>
-
-    <script>
-        function note_berechnen(){
-            let note1 = 0, note2 = 0, note3 = 0;
-            let gewichtung1 = 1, gewichtung2 = 1, gewichtung3 = 1;
-            let resultat = 0;
-
-            note1 = document.getElementById("note-1").value;
-            note2 = document.getElementById("note-2").value;
-            note3 = document.getElementById("note-3").value;
-            resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
-
-            alert("Dein Notenschnitt beträgt: "+resultat);
-
-
-        }
-    </script>
+ <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
+<script src="js/notenrechner.js"></script>
 
     <footer class="footer">
         <a class="footer-a" href="mailto:contact@robinneher.ch">Contact Robin</a>
