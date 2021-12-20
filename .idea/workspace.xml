@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="" />
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/pulver_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_06_2021_13_32_[Default_Changelist]/stapel.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +51,7 @@
       <workItem from="1624359952961" duration="4605000" />
       <workItem from="1624606842506" duration="624000" />
       <workItem from="1624964582822" duration="3542000" />
+      <workItem from="1640004533903" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
