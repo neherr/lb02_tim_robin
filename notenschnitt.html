@@ -50,14 +50,14 @@
 
         <div id="rechner" class="rechner-feld">
             <form style="margin-top: 50px; width: 500px">
-               <h2 class="noten"><label>Note 1</label></h2>
-                <div class="notennn">
-                <label class="gewichtung"> Note:</label>
-                    <input id="note-1">
+                    <h2 class="noten"><label>Note 1</label></h2>
+                    <div class="notennn">
+                        <label class="gewichtung"> Note:</label>
+                        <input type="number" id="note-1">
 
                     <div class="notenrechner">
-                    <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-1"><br>
+                        <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-1" type="number" value="1"><br>
                     </div>
                     </div>
 
@@ -65,33 +65,48 @@
 
                     <h2 class="noten"> <label>Note 2</label></h2>
                     <div class="notennn">
-                    <label class="gewichtung"> Note:</label>
-                        <input id="note-2">
+                        <label class="gewichtung"> Note:</label>
+                        <input type="number" id="note-2">
 
-                        <div class="notenrechner">
-                    <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-2"><br>
+                    <div class="notenrechner">
+                        <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-2" type="number" value="1"><br>
                     </div>
                     </div>
 
 
                     <h2 class="noten"><label>Note 3 </label></h2>
                     <div class="notennn">
-                    <label class="gewichtung"> Note:</label>
-                        <input id="note-3">
-
-                        <div class="notenrechner">
-                    <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-3"> <br>
+                        <label class="gewichtung"> Note:</label>
+                        <input type="number" id="note-3">
+                    <div class="notenrechner">
+                        <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-3" type="number" value="1"> <br>
                     </div>
                     </div>
             </form>
         </div>
+        
         <span class="button-span">
-            <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button>
+            <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button> <br>
+            <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
         </span>
+
+        <div class="rechner-feld">
+            <form style="margin-top: 50px; width: 500px">
+                <h2 class="noten"><label>Noten speichern</label></h2>
+                <div class="notennn">
+                    <input type="text" id="speicher-name" placeholder="Namen zum abspeichern">
+                    <button type="button"; onclick="" class="rechner-button btn btn-primary">Speichern</button>
+                </div>
+                </form>
+           </div> 
+            
+        
+       
+
     </main>
- <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
+    
 <script src="js/notenrechner.js"></script>
 
     <footer class="footer">
