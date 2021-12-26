@@ -42,7 +42,7 @@
         <div class="untertitel-text">
             <p class="beschreibungs-text">
                 Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung ein.
-                Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2<br>
+                Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2.
                 Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld auch leer lassen,
                 es müssen jedoch immer links 3 Noten verwendet werden.
             </p>
@@ -88,8 +88,9 @@
         </div>
         
         <span class="button-span">
-            <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button> <br>
             <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
+            <button onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button> <br>
+
         </span>
 
         <div class="rechner-feld">
@@ -97,7 +98,7 @@
                 <h2 class="noten"><label>Noten speichern</label></h2>
                 <div class="notennn">
                     <input type="text" id="speicher-name" placeholder="Namen zum abspeichern">
-                    <button type="button"; onclick="" class="rechner-button btn btn-primary">Speichern</button>
+                    <button type="button"; onclick="" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
                 </div>
                 </form>
            </div> 
