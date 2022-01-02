@@ -24,19 +24,24 @@ function note_berechnen(){
 }
 
 function note_speichern(){
-    let speicherName = document.getElementById("speicher-name").value;
+    let speicherName = document.getElementById("speicher-name").value
+    //überprüfung einfügen ob Namen  eingegeben
     alleNoten = { 
-        "Noten" : [note1, note2, note3, resultat],
-        "Fach" : speicherName
-
+        Fach : speicherName,
+        Noten : [note1, note2, note3],
+        Schnitt : resultat
     }
-
-
-    localStorage.setItem("note", alleNoten);
+    window.localStorage.setItem("note", JSON.stringify(alleNoten));
+    
+    
 }
 
 function note_laden(){
-    geladeneNoten = localStorage.getItem("note");
-    console.log(geladeneNoten.Fach);
+    let geladeneNoten = JSON.parse(window.localStorage.getItem("note"));
+    document.getElementById("geladeneNoten").innerHTML = `Du hasst die Noten: ${geladeneNoten.Noten} mit dem Schnitt: ${geladeneNoten.Schnitt}, gespeichert unter: ${geladeneNoten.Fach}`
 
+}
+function löschen(){
+    window.localStorage.clear();
+    document.getElementById("geladeneNoten").innerHTML = "";
 }
