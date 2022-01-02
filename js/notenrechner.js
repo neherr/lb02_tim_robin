@@ -18,15 +18,16 @@ function note_berechnen(){
     if(note1 >= 1 && note1 <=6 && note2 >= 1 && note2 <=6 && note3 >= 1 && note3 <=6){
         resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
     } else{
-        resultat = "du kannst nur Noten zwischen 1-6 verwenden";
+        alert("du kannst nur Noten zwischen 1-6 verwenden");
     }
     document.getElementById("resultat").innerHTML = `Dein Schnitt ist: ${resultat}`;
 }
 
 function note_speichern(){
     let speicherName = document.getElementById("speicher-name").value
-    //überprüfung einfügen ob Namen  eingegeben
+    //////überprüfung einfügen ob Namen  eingegeben/////
     alleNoten = { 
+        
         Fach : speicherName,
         Noten : [note1, note2, note3],
         Schnitt : resultat
