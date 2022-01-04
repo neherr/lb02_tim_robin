@@ -43,6 +43,7 @@ function note_speichern(){
             Schnitt : resultat
         }
         window.localStorage.setItem(speicherName, JSON.stringify(alleNoten));
+        alert("Deine Noten wurden gespeichert!");
     } 
     
 }
