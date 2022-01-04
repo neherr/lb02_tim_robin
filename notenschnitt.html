@@ -43,8 +43,12 @@
             <p class="beschreibungs-text-center">
                 Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung ein.
                 Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2.
-                Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld auch leer lassen,
-                es müssen jedoch immer links 3 Noten verwendet werden.
+                Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld unverändert lassen,
+                es müssen jedoch links immer 3 Noten verwendet werden. <br> 
+                Wenn du danach deine Noten speichern möchtest, gib unten einen Namen zum speichern ein 
+                und klicke auf speichern. Um sie dann zu laden gib einfach den Namen 
+                wieder ein und klicke auf laden. <br>
+                Möchtest du deine gespeicherten Noten löschen, dann klicke einfach auf löschen.
             </p>
         </div>
 
@@ -99,7 +103,10 @@
                 <h2 class="noten"><label>Noten speichern</label></h2>
                 <div class="notennn">
                     <input type="text" id="speicher-name" placeholder="Namen zum speichern">
-                    <button type="button"; onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
+                    <button type="button" onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
+                </div>
+                <div class="notennn">
+                    <input type="text" id="lade-name" placeholder="Namen zum Laden">
                     <button type="button"; onclick="note_laden()" class="rechner-button btn btn-primary" id="button-laden">Laden</button>
                     <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary" id="button-loeschen">Löschen</button>
                 </div>
