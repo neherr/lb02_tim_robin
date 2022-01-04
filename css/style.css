@@ -68,8 +68,17 @@ h3{
 
 .startseite-header{
     display: flex;
+    justify-content: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: comfortaa;
+}
+
+.startseite-header-center{
+    display: flex;
     justify-content: center;
-    margin: 25px 0px 0px 0px;
+    margin-top: 25px;
     font-size: 50px;
     font-family: comfortaa;
 }
@@ -82,31 +91,43 @@ h3{
     color: #e76f51;
 }
 
-.beschreibungs-text{
-    text-align: justify;
-    text-align-last: justify;
-    width: 1500px;
-    margin: 0px 330px 0px 330px;
- }
+
+
+.beschreibungs-text-center{
+    text-align: justify-all;
+    display: flex;
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 #resultat {
     text-align: left;
-    text-align-last: left;
-    margin-left: 550px;
 }
 
 #button-berechnen {
-    display: flex;
-    margin-right: 440px;
+    margin-left: 0px;
 }
 
 #button-speichern {
     display: flex;
-    margin-left: 300px;
+    margin-left: 50px;
+}
+
+#button-loeschen {
+    display: flex;
+    margin-left: 30px;
+}
+
+#button-laden {
+    display: flex;
+    margin-left: 30px;
 }
 
  .untertitel-text{
      display: flex;
+     justify-content: center;
      align-items: center;
      margin: 30px 0px 30px 0px;
  }
@@ -293,14 +314,17 @@ video{
 }
 .rechner-feld{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-left: 0px;
+    width: auto;
 }
 
 
 .button-span{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: auto;
 }
 .notenrechner {
     display: flex;

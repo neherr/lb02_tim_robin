@@ -37,10 +37,10 @@
 
     <main>
         <header>
-            <h1 class="startseite-header">Notenschnitt berechnen</h1>
+            <h1 class="startseite-header-center">Notenschnitt berechnen</h1>
         </header>
         <div class="untertitel-text">
-            <p class="beschreibungs-text">
+            <p class="beschreibungs-text-center">
                 Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung ein.
                 Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2.
                 Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld auch leer lassen,
@@ -49,7 +49,7 @@
         </div>
 
         <div id="rechner" class="rechner-feld">
-            <form style="margin-top: 50px; width: 500px">
+            <form style="margin-top: 50px; width: auto">
                     <h2 class="noten"><label>Note 1</label></h2>
                     <div class="notennn">
                         <label class="gewichtung"> Note:</label>
@@ -84,23 +84,24 @@
                         <input id="gewichtung-3" type="number" value="1"> <br>
                     </div>
                     </div>
-            </form>
-        </div>
-        
-        <span class="button-span">
-            <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
-            <button onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button> <br>
+                <span class="button-span">
+            <p id="resultat">Dein Schnitt ist:</p>
+            <button onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button>
 
         </span>
 
+            </form>
+        </div>
+
+
         <div class="rechner-feld">
-            <form style="margin-top: 50px; width: 500px">
+            <form style="margin-top: 50px; width: "auto">
                 <h2 class="noten"><label>Noten speichern</label></h2>
                 <div class="notennn">
                     <input type="text" id="speicher-name" placeholder="Namen zum abspeichern">
                     <button type="button"; onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
                     <button type="button"; onclick="note_laden()" class="rechner-button btn btn-primary" id="button-laden">Laden</button>
-                    <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary">Löschen</button>
+                    <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary" id="button-loeschen">Löschen</button>
                 </div>
                 <p id="geladeneNoten"></p>
                 </form>
