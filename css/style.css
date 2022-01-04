@@ -154,6 +154,10 @@ h3{
     font-family: comfortaa;
 }
 
+#geladeneNoten {
+    margin-top: 25px;
+}
+
 
 .doku-video{
     display: flex;
