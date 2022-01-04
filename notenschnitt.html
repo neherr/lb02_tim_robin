@@ -86,7 +86,7 @@
                     </div>
                 <span class="button-span">
             <p id="resultat">Dein Schnitt ist:</p>
-            <button onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button>
+            <button type="button" onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button>
 
         </span>
 
@@ -95,10 +95,10 @@
 
 
         <div class="rechner-feld">
-            <form style="margin-top: 50px; width: "auto">
+            <form style="margin-top: 50px">
                 <h2 class="noten"><label>Noten speichern</label></h2>
                 <div class="notennn">
-                    <input type="text" id="speicher-name" placeholder="Namen zum abspeichern">
+                    <input type="text" id="speicher-name" placeholder="Namen zum speichern">
                     <button type="button"; onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
                     <button type="button"; onclick="note_laden()" class="rechner-button btn btn-primary" id="button-laden">Laden</button>
                     <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary" id="button-loeschen">Löschen</button>

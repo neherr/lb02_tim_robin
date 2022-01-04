@@ -18,7 +18,7 @@ function note_berechnen(){
     if(note1 >= 1 && note1 <=6 && note2 >= 1 && note2 <=6 && note3 >= 1 && note3 <=6){
         resultat = ((note1*gewichtung1)+(note2*gewichtung2)+(note3*gewichtung3))/(gewichtung1+gewichtung2+gewichtung3);
     } else{
-        alert("du kannst nur Noten zwischen 1-6 verwenden");
+        alert("Du kannst nur  3 Noten zwischen 1-6 verwenden");
     }
     document.getElementById("resultat").innerHTML = `Dein Schnitt ist: ${resultat}`;
 }
@@ -39,7 +39,8 @@ function note_speichern(){
 
 function note_laden(){
     let geladeneNoten = JSON.parse(window.localStorage.getItem("note"));
-    document.getElementById("geladeneNoten").innerHTML = `Du hasst die Noten: ${geladeneNoten.Noten} mit dem Schnitt: ${geladeneNoten.Schnitt}, gespeichert unter: ${geladeneNoten.Fach}`
+    document.getElementById("geladeneNoten").innerHTML = `Du hasst die Noten: 
+    ${geladeneNoten.Noten[0]}, ${geladeneNoten.Noten[1]} und ${geladeneNoten.Noten[2]} mit dem Schnitt: ${geladeneNoten.Schnitt} gespeichert unter: ${geladeneNoten.Fach}`
 
 }
 function löschen(){
