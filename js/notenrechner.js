@@ -56,7 +56,7 @@ function note_laden(){
         alert("Gib bitte einen Namen ein zum laden")
     } else{ //Hier werden die geladenen Noten ausgegeben
         let geladeneNoten = JSON.parse(window.localStorage.getItem(ladeKey));
-            document.getElementById("geladeneNoten").innerHTML = `Du hasst die Noten mit Gewichtung: 
+            document.getElementById("geladeneNoten").innerHTML = `Du hasst die Noten mit Gewichtung:
             ${geladeneNoten.Noten[0]} (${geladeneNoten.Gewichtung[1]}), ${geladeneNoten.Noten[1]} (${geladeneNoten.Gewichtung[1]}) und ${geladeneNoten.Noten[2]} (${geladeneNoten.Gewichtung[1]}) 
             mit dem Schnitt: ${geladeneNoten.Schnitt} gespeichert unter: ${geladeneNoten.Fach}`
     } 
