@@ -343,4 +343,11 @@ video{
     display: flex;
     flex-direction: row;
 }
-
+.auswahl{
+    display: flex;
+    flex-direction:column ;
+}
+.geschlecht{
+    display: flex;
+    flex-direction: column;
+}

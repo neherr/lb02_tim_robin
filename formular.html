@@ -25,10 +25,13 @@
                         <a class="nav-link "  href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="notenschnitt.html">Notenschnitt berechnen</a>
+                        <a class="nav-link" aria-current="page" href="notenschnitt.html">Notenschnitt berechnen</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formular.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -37,80 +40,73 @@
 
     <main>
         <header>
-            <h1 class="startseite-header-center">Notenschnitt berechnen</h1>
+            <h1 class="startseite-header-center">Kontakt Formular</h1>
         </header>
         <div class="untertitel-text">
             <p class="beschreibungs-text-center">
-                lalalalalalalalalalal
+                Sie möchten uns Kritik oder sonstiges mitteilen bezüglich unser Website? <br>
+                Benutzen Sie dafür gerne unser Kontakt Formular!
             </p>
         </div>
 
-        <div id="rechner" class="rechner-feld">
+        <div id="formular" class="rechner-feld">
             <form style="margin-top: 50px; width: auto">
-                    <h2 class="noten"><label>Note 1</label></h2>
+                    <h2 class="noten"><label>Kontakt</label></h2>
                     <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-1">
-
+                        <label class="gewichtung"> Name</label>
+                        <input type="text" id="form-name">
                     <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-1" type="number" value="1"><br>
+                        <label class="gewichtung_0">Nachname:</label>
+                        <input id="form-nachname" type="text"><br>
                     </div>
                     </div>
-
-
-
-                    <h2 class="noten"> <label>Note 2</label></h2>
                     <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-2">
-
+                        <label class="gewichtung"> e-Mail</label>
+                        <input type="text" id="form-mail">
                     <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-2" type="number" value="1"><br>
+                        <label class="gewichtung_0">Geburtstag:</label>
+                        <input id="form-date" type="date"><br>
+
                     </div>
                     </div>
+                    <div class="auswahl">
+                        <p> Geschlecht:</p>
+                        <div class="geschlecht">
+                            <span>
+                                <input type="radio" name="fgender" value="male">
+                                <label>Male</label>
+                            </span>
+                            <span>
+                               <input type="radio" name="fgender" value="female">
+                                <label>Female</label>
+                            </span>
 
-
-                    <h2 class="noten"><label>Note 3 </label></h2>
-                    <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-3">
-                    <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-3" type="number" value="1"> <br>
+                        </div>
                     </div>
+                    <div class="auswahl">
+                        <p>Grund:</p>
+                        <div class="geschlecht">
+                            <span>
+                                <input name="fgrund" value="problem" type="checkbox"><br>
+                                <label>Problem mit der Website</label>
+                            </span>
+                            <span>
+                                <input name="fgrund" value="vorschlag" type="checkbox"><br>
+                                <label>Verbesserungs Vorschlag</label>
+                            </span>
+                        </div>
+
+
                     </div>
-                <span class="button-span">
-            <p id="resultat">Dein Schnitt ist:</p>
-            <button type="button" onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button>
+                <div class="notennn">
+                    <label class="gewichtung_0">Nachricht:</label>
+                    <textarea id="nachricht">Schreib uns eine Nachricht...</textarea>
 
-        </span>
-
+                </div>
             </form>
 
 
         </div>
-
-
-        <div class="rechner-feld">
-            <form style="margin-top: 50px; width: auto">
-                <h2 class="noten"><label>Noten speichern</label></h2>
-                <div class="notennn">
-                    <input type="text" id="speicher-name" placeholder="Namen zum speichern">
-                    <button type="button" onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
-                </div>
-                <div class="notennn">
-                    <input type="text" id="lade-name" placeholder="Namen zum Laden">
-                    <button type="button"; onclick="note_laden()" class="rechner-button btn btn-primary" id="button-laden">Laden</button>
-                </div>
-                <p id="geladeneNoten"></p>
-                <div class="notennnn">
-                    <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary" id="button-loeschen">Löschen</button>
-                </div>
-                </form>
-
-           </div>
 
     </main>
     
