@@ -73,11 +73,11 @@
                         <p> Geschlecht:</p>
                         <div class="geschlecht">
                             <span>
-                                <input type="radio" name="fgender" value="male">
+                                <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
                                 <label>Male</label>
                             </span>
                             <span>
-                               <input type="radio" name="fgender" value="female">
+                               <input type="radio" name="fgender" value="female" onclick="selectGender(this.value)">
                                 <label>Female</label>
                             </span>
 
@@ -87,22 +87,24 @@
                         <p>Grund:</p>
                         <div class="geschlecht">
                             <span>
-                                <input name="fgrund" value="problem" type="checkbox"><br>
+                                <input name="fgrund" value="problem" type="checkbox" class="feedback">
                                 <label>Problem mit der Website</label>
                             </span>
                             <span>
-                                <input name="fgrund" value="vorschlag" type="checkbox"><br>
+                                <input name="fgrund" value="vorschlag" type="checkbox" class="feedback">
                                 <label>Verbesserungs Vorschlag</label>
                             </span>
+                            <span>
+                                <input name="fgrund" value="sonstiges" type="checkbox" class="feedback">
+                                <label>Sonstiges Feeddack</label>
+                            </span>
                         </div>
-
-
                     </div>
                 <div class="notennn">
                     <label class="gewichtung_0">Nachricht:</label>
-                    <textarea id="nachricht">Schreib uns eine Nachricht...</textarea>
-
+                    <textarea id="nachricht" placeholder="Schreib und eine Nachricht..."></textarea>
                 </div>
+                <input type="button" class="rechner-button btn btn-primary" onclick="formSubmit()" value="Abschicken">
             </form>
 
 

@@ -68,3 +68,21 @@ function löschen(){
     window.localStorage.clear();
     document.getElementById("geladeneNoten").innerHTML = "";
 }
+let name, nachname, eMail, birthday, gender, grund, message;
+let kontaktPerson = {};
+
+function selectGender(selection) {
+    gender = selection;
+}
+function formSubmit(){
+    kontaktPerson = {
+        pName : document.getElementById("form-name").value,
+        pNachname : document.getElementById("form-nachname").value,
+        pEmail : document.getElementById("form-mail").value,
+        pBirthday : document.getElementById("form-date").value,
+        pGender : gender,
+        pGrund : document.querySelector('.feedback:checked').value,
+        pMessage : document.getElementById("nachricht").value,
+    }
+    console.log(kontaktPerson);
+}
