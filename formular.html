@@ -11,125 +11,116 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #264653;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.svg" style="width: 40px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link "  href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="notenschnitt.html">Notenschnitt berechnen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #264653;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" style="width: 40px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link "  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="notenschnitt.html">Notenschnitt berechnen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="formular.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <header>
+        <h1 class="startseite-header-center">Kontakt Formular</h1>
+    </header>
+    <div class="untertitel-text">
+        <p class="beschreibungs-text-center">
+            Sie möchten uns Kritik oder sonstiges mitteilen bezüglich unser Website? <br>
+            Benutzen Sie dafür gerne unser Kontakt Formular!
+        </p>
+    </div>
+
+    <div id="formular" class="rechner-feld">
+        <form style="margin-top: 50px; width: auto">
+            <h2 class="noten"><label>Kontakt</label></h2>
+            <div class="notennn">
+                <label class="gewichtung"> Name</label>
+                <input type="text" id="form-name">
+                <div class="notenrechner">
+                    <label class="gewichtung_0">Nachname:</label>
+                    <input id="form-nachname" type="text"><br>
+                </div>
             </div>
-        </div>
-    </nav>
+            <div class="notennn">
+                <label class="gewichtung"> e-Mail</label>
+                <input type="text" id="form-mail">
+                <div class="notenrechner">
+                    <label class="gewichtung_0">Geburtstag:</label>
+                    <input id="form-date" type="date"><br>
 
-    <main>
-        <header>
-            <h1 class="startseite-header-center">Notenschnitt berechnen</h1>
-        </header>
-        <div class="untertitel-text">
-            <p class="beschreibungs-text-center">
-                Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung ein.
-                Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2.
-                Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld unverändert lassen,
-                es müssen jedoch links immer 3 Noten verwendet werden. <br> 
-                Wenn du danach deine Noten speichern möchtest, gib unten einen Namen zum speichern ein 
-                und klicke auf speichern. Um sie dann zu laden gib einfach den Namen 
-                wieder ein und klicke auf laden. <br>
-                Möchtest du deine gespeicherten Noten löschen, dann klicke einfach auf löschen.
-            </p>
-        </div>
-
-        <div id="rechner" class="rechner-feld">
-            <form style="margin-top: 50px; width: auto">
-                    <h2 class="noten"><label>Note 1</label></h2>
-                    <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-1">
-
-                    <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-1" type="number" value="1"><br>
-                    </div>
-                    </div>
-
-
-
-                    <h2 class="noten"> <label>Note 2</label></h2>
-                    <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-2">
-
-                    <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-2" type="number" value="1"><br>
-                    </div>
-                    </div>
-
-
-                    <h2 class="noten"><label>Note 3 </label></h2>
-                    <div class="notennn">
-                        <label class="gewichtung"> Note:</label>
-                        <input type="number" id="note-3">
-                    <div class="notenrechner">
-                        <label class="gewichtung_0">Gewichtung:</label>
-                        <input id="gewichtung-3" type="number" value="1"> <br>
-                    </div>
-                    </div>
-                <span class="button-span">
-            <p id="resultat">Dein Schnitt ist:</p>
-            <button type="button" onclick="note_berechnen()" class="rechner-button btn btn-primary" id="button-berechnen">Berechnen</button>
-
-        </span>
-
-            </form>
-
-
-        </div>
-
-
-        <div class="rechner-feld">
-            <form style="margin-top: 50px; width: auto">
-                <h2 class="noten"><label>Noten speichern</label></h2>
-                <div class="notennn">
-                    <input type="text" id="speicher-name" placeholder="Namen zum speichern">
-                    <button type="button" onclick="note_speichern()" class="rechner-button btn btn-primary" id="button-speichern">Speichern</button>
                 </div>
-                <div class="notennn">
-                    <input type="text" id="lade-name" placeholder="Namen zum Laden">
-                    <button type="button"; onclick="note_laden()" class="rechner-button btn btn-primary" id="button-laden">Laden</button>
-                </div>
-                <p id="geladeneNoten"></p>
-                <div class="notennnn">
-                    <button type="button"; onclick="löschen();" class="rechner-button btn btn-primary" id="button-loeschen">Löschen</button>
-                </div>
-                </form>
+            </div>
+            <div class="auswahl">
+                <p> Geschlecht:</p>
+                <div class="geschlecht">
+                            <span>
+                                <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
+                                <label>Male</label>
+                            </span>
+                    <span>
+                               <input type="radio" name="fgender" value="female" onclick="selectGender(this.value)">
+                                <label>Female</label>
+                            </span>
 
-           </div>
+                </div>
+            </div>
+            <div class="auswahl">
+                <p>Grund:</p>
+                <div class="geschlecht">
+                            <span>
+                                <input name="fgrund" value="problem" type="checkbox" class="feedback">
+                                <label>Problem mit der Website</label>
+                            </span>
+                    <span>
+                                <input name="fgrund" value="vorschlag" type="checkbox" class="feedback">
+                                <label>Verbesserungs Vorschlag</label>
+                            </span>
+                    <span>
+                                <input name="fgrund" value="sonstiges" type="checkbox" class="feedback">
+                                <label>Sonstiges Feeddack</label>
+                            </span>
+                </div>
+            </div>
+            <div class="notennn">
+                <label class="gewichtung_0">Nachricht:</label>
+                <textarea id="nachricht" placeholder="Schreib und eine Nachricht..."></textarea>
+            </div>
+            <input type="button" class="rechner-button btn btn-primary" onclick="formSubmit()" value="Abschicken">
+        </form>
 
-    </main>
-    
+
+    </div>
+
+</main>
+
 <script src="js/notenrechner.js"></script>
 
-    <footer class="footer">
-        <a class="footer-a" href="mailto:contact@robinneher.ch">Contact Robin</a>
-        <a class="footer-a" href="mailto:federspielt@bzz.ch">Contact Tim</a>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+<footer class="footer">
+    <a class="footer-a" href="mailto:contact@robinneher.ch">Contact Robin</a>
+    <a class="footer-a" href="mailto:federspielt@bzz.ch">Contact Tim</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 
 </body>
 </html>
