@@ -68,6 +68,10 @@ function löschen(){
     window.localStorage.clear();
     document.getElementById("geladeneNoten").innerHTML = "";
 }
+
+function validateForm() {
+    console.log("form has been sent")
+  }
 let name, nachname, eMail, birthday, gender, grund, message;
 let kontaktPerson = {};
 
@@ -84,5 +88,5 @@ function formSubmit(){
         pGrund : document.querySelector('.feedback:checked').value,
         pMessage : document.getElementById("nachricht").value,
     }
-    console.log(kontaktPerson);
+    console.log(kontaktPerson, "hello");
 }

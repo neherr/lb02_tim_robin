@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="form">
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="kek">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formular.html" beforeDir="false" afterPath="$PROJECT_DIR$/formular.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
@@ -14,9 +14,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="a80acaf3-b302-4456-98e4-3a6da0e83298" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -26,15 +23,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/robin/Hut.ch AG/Hut.ch AG - Dokumente (1)/01_Firma intern/2.0 Angestellte/Robin/Schule/informatik/modul 307/lb02_tim_robin&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tlfed\WebstormProjects\lb02_tim_robin\images" />
@@ -66,6 +59,7 @@
       <workItem from="1641377200063" duration="2413000" />
       <workItem from="1653032201268" duration="7277000" />
       <workItem from="1653051282913" duration="3403000" />
+      <workItem from="1653325136761" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
