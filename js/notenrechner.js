@@ -69,10 +69,7 @@ function löschen(){
     document.getElementById("geladeneNoten").innerHTML = "";
 }
 
-function validateForm() {
-    console.log("form has been sent")
-  }
-let name, nachname, eMail, birthday, gender, grund, message;
+let gender;
 let kontaktPerson = {};
 
 function selectGender(selection) {
@@ -88,5 +85,6 @@ function formSubmit(){
         pGrund : document.querySelector('.feedback:checked').value,
         pMessage : document.getElementById("nachricht").value,
     }
-    console.log(kontaktPerson, "hello");
+    console.log(kontaktPerson);
 }
+
