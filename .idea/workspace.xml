@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="github fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="push test">
       <change beforePath="$PROJECT_DIR$/formular.html" beforeDir="false" afterPath="$PROJECT_DIR$/formular.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <workItem from="1653032201268" duration="7277000" />
       <workItem from="1653051282913" duration="3403000" />
       <workItem from="1653325136761" duration="958000" />
-      <workItem from="1653395423806" duration="1497000" />
+      <workItem from="1653395423806" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -216,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653325498923</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="push test">
+      <created>1653398381830</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1653398381830</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +255,7 @@
     <MESSAGE value="form" />
     <MESSAGE value="kek" />
     <MESSAGE value="github fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="github fix" />
+    <MESSAGE value="push test" />
+    <option name="LAST_COMMIT_MESSAGE" value="push test" />
   </component>
 </project>
