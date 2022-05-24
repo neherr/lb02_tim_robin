@@ -52,21 +52,29 @@
     <div id="formular" class="rechner-feld">
         <form style="margin-top: 50px; width: auto">
             <h2 class="noten"><label>Kontakt</label></h2>
+
             <div class="notennn">
-                <label class="gewichtung"> Name</label>
+                <label class="gewichtung_1"> Name: </label>
                 <input type="text" id="form-name">
-                <div class="notenrechner">
-                    <label class="gewichtung_0">Nachname:</label>
-                    <input id="form-nachname" type="text"><br>
-                </div>
+
             </div>
+
+
+                <div class="notennn">
+                    <label class="gewichtung_1">Nachname:</label> <br>
+                    <input id="form-nachname" type="text">
+                </div>
+
+
+
             <div class="notennn">
-                <label class="gewichtung"> e-Mail</label>
+                <label class="gewichtung"> E-Mail: </label>
                 <input type="text" id="form-mail">
             </div>
-            <div class="auswahl">
-                <p> Geschlecht:</p>
-                <div class="geschlecht">
+
+            <div class="auswahl, notennn" id="auswahl_flex">
+                <p class="margin_geschlecht"> Geschlecht:</p>
+                <div class="geschlecht_0">
                             <span>
                                 <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
                                 <label>Male</label>
@@ -78,8 +86,9 @@
 
                 </div>
             </div>
-            <div class="auswahl">
-                <p>Grund:</p>
+
+            <div class="auswahl, notennn" id="auswahl_flex">
+                <p class="margin_grund">Grund:</p>
                 <div class="geschlecht">
                             <span>
                                 <input name="fgrund" value="problem" type="checkbox" class="feedback">
@@ -87,7 +96,7 @@
                             </span>
                     <span>
                                 <input name="fgrund" value="vorschlag" type="checkbox" class="feedback">
-                                <label>Verbesserungs Vorschlag</label>
+                                <label>Verbesserungsvorschlag</label>
                             </span>
                     <span>
                                 <input name="fgrund" value="sonstiges" type="checkbox" class="feedback">
@@ -96,8 +105,8 @@
                 </div>
             </div>
             <div class="notennn">
-                <label class="gewichtung_0">Nachricht:</label>
-                <textarea id="nachricht" placeholder="Schreib und eine Nachricht..."></textarea>
+                <label class="gewichtung_1">Nachricht:</label>
+                <textarea id="nachricht" placeholder="Schreib uns eine Nachricht..."></textarea>
             </div>
             <input type="button" class="rechner-button btn btn-primary" onclick="formSubmit()" value="Abschicken">
         </form>
