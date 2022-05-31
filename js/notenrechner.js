@@ -69,22 +69,118 @@ function löschen(){
     document.getElementById("geladeneNoten").innerHTML = "";
 }
 
-let gender;
-let kontaktPerson = {};
+/**** Client Validation example****/
 
+let gender;
 function selectGender(selection) {
     gender = selection;
 }
-function formSubmit(){
-    kontaktPerson = {
-        pName : document.getElementById("form-name").value,
-        pNachname : document.getElementById("form-nachname").value,
-        pEmail : document.getElementById("form-mail").value,
-        pBirthday : document.getElementById("form-date").value,
-        pGender : gender,
-        pGrund : document.querySelector('.feedback:checked').value,
-        pMessage : document.getElementById("nachricht").value,
-    }
-    console.log(kontaktPerson);
+
+const form = document.getElementById('formular');
+const Name = document.getElementById("form-name");
+const Nachname = document.getElementById("form-nachname");
+const Email = document.getElementById("form-mail");
+const Message = document.getElementById("nachricht");
+
+// Show input error message
+function showError(input, message) {
+    console.log(input, message);
+    const formControl = input;
+    formControl.className = 'error';
+    /*const small = formControl.querySelector('small');
+    small.innerText = message;*/
 }
 
+// Show success outline
+function showSuccess(input) {
+    console.log("Succesfull");
+}
+
+// Check email is valid
+function checkEmail(input) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(input.value.trim())) {
+        showSuccess(input);
+    } else {
+        showError(input, 'Email is not valid');
+    }
+}
+
+// Check required fields
+function checkRequired(inputArr) {
+    let isRequired = false;
+    inputArr.forEach(function(input) {
+        if (input.value.trim() === '') {
+            showError(input, `${getFieldName(input)} is required`);
+            isRequired = true;
+        } else {
+            showSuccess(input);
+        }
+    });
+
+    return isRequired;
+}
+
+// Check input length
+function checkLength(input, min, max) {
+    if (input.value.length < min) {
+        showError(
+            input,
+            `${getFieldName(input)} must be at least ${min} characters`
+        );
+    } else if (input.value.length > max) {
+        showError(
+            input,
+            `${getFieldName(input)} must be less than ${max} characters`
+        );
+    } else {
+        showSuccess(input);
+    }
+}
+
+// Get fieldname
+function getFieldName(input) {
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
+function validateForm(){
+    if(!checkRequired([Name, Email, Nachname, Message])){
+        checkLength(Name, 3, 15);
+        checkLength(Nachname, 3, 25);
+        checkLength(Message, 5, 500);
+        checkEmail(Email);
+    }
+    let ele=[]
+    function getValue() {
+        let bike = document.getElementById("checkbox1")
+        if(bike.checked){
+            ele.push(bike.value);
+        }
+        let car = document.getElementById("checkbox2")
+        if(car.checked){
+            ele.push(car.value);
+        }
+        let home = document.getElementById("checkbox3")
+        if(home.checked){
+            ele.push(home.value);
+        }
+        if(ele.length>0){
+            console.log(ele);
+        }
+        else{
+            console.log("choose a reason");
+        }
+    }
+    const Gender = gender;
+    //const Grund = document.querySelector('.feedback:checked').value;
+    console.log(Name.value, Nachname.value, Email.value, Gender,getValue(), Message.value);
+}
+
+
+// Event listeners
+form.addEventListener('submit', function(e) {
+    //https://www.w3schools.com/jsref/event_preventdefault.asp
+    e.preventDefault();
+    //First validate form
+    validateForm();
+});

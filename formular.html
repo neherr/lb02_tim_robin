@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #264653;">
@@ -54,34 +53,33 @@
             <h2 class="noten"><label>Kontakt</label></h2>
 
             <div class="notennn">
-                <label class="gewichtung_1"> Name: </label>
+                <label class="gewichtung_1"> Name*: </label>
                 <input type="text" id="form-name">
-
             </div>
 
 
                 <div class="notennn">
-                    <label class="gewichtung_1">Nachname:</label> <br>
+                    <label class="gewichtung_1">Nachname*:</label> <br>
                     <input id="form-nachname" type="text">
                 </div>
 
 
 
             <div class="notennn">
-                <label class="gewichtung"> E-Mail: </label>
+                <label class="gewichtung"> E-Mail*: </label>
                 <input type="text" id="form-mail">
             </div>
 
             <div class="auswahl, notennn" id="auswahl_flex">
-                <p class="margin_geschlecht"> Geschlecht:</p>
+                <p class="margin_geschlecht"> Anrede:</p>
                 <div class="geschlecht_0">
                             <span>
                                 <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
-                                <label>Male</label>
+                                <label>Mann</label>
                             </span>
                     <span>
                                <input type="radio" name="fgender" value="female" onclick="selectGender(this.value)">
-                                <label>Female</label>
+                                <label>Frau</label>
                             </span>
 
                 </div>
@@ -91,24 +89,24 @@
                 <p class="margin_grund">Grund:</p>
                 <div class="geschlecht">
                             <span>
-                                <input name="fgrund" value="problem" type="checkbox" class="feedback">
+                                <input name="fgrund" value="problem" id="checkbox1" type="checkbox" class="feedback">
                                 <label>Problem mit der Website</label>
                             </span>
                     <span>
-                                <input name="fgrund" value="vorschlag" type="checkbox" class="feedback">
+                                <input name="fgrund" value="vorschlag" id="checkbox2" type="checkbox" class="feedback">
                                 <label>Verbesserungsvorschlag</label>
                             </span>
                     <span>
-                                <input name="fgrund" value="sonstiges" type="checkbox" class="feedback">
+                                <input name="fgrund" value="sonstiges" id="checkbox3" type="checkbox" class="feedback">
                                 <label>Sonstiges Feeddack</label>
                             </span>
                 </div>
             </div>
             <div class="notennn">
-                <label class="gewichtung_1">Nachricht:</label>
+                <label class="gewichtung_1">Nachricht*:</label>
                 <textarea id="nachricht" placeholder="Schreib uns eine Nachricht..."></textarea>
             </div>
-            <input type="button" class="rechner-button btn btn-primary" onclick="formSubmit()" value="Abschicken">
+            <input type="submit" class="rechner-button btn btn-primary" value="Abschicken">
         </form>
 
 

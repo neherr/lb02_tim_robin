@@ -392,3 +392,6 @@ video{
     display: flex;
     justify-content: center;
 }
+.error{
+    border: red 2px solid;
+}
