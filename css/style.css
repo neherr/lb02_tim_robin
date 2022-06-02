@@ -207,6 +207,7 @@ video{
     justify-content: space-between;
     flex-direction: row;
     margin-top: 25px;
+    width: 100%;
 }
 
 .notennnn {
@@ -350,10 +351,6 @@ video{
     display: flex;
     flex-direction: row;
 }
-.auswahl{
-    display: flex;
-    flex-direction:column ;
-}
 .geschlecht{
     display: flex;
     flex-direction: column;
@@ -373,11 +370,20 @@ video{
 
 /* kontakt Formular */
 
-#auswahl_flex {
+form{
+    width: 50%;
+}
+
+.auswahl_flex {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
 }
+.spalte-rechts{
+    display: flex;
+    align-items: flex-end;
+}
+
 
 .margin_geschlecht {
     margin-right: 100px;
@@ -387,11 +393,38 @@ video{
     margin-right: 125px;
 }
 
-#formular {
-    width: auto;
+.form-div{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .error{
     border: red 2px solid;
+}
+
+.form-control{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.spalte-rechts small {
+    visibility: hidden;
+}
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error textarea{
+    border-color: red;
+}
+.form-control.success input{
+    border-color: lime;
+}
+.form-control.success textarea{
+    border-color: lime;
 }

@@ -48,63 +48,84 @@
         </p>
     </div>
 
-    <div id="formular" class="rechner-feld">
-        <form style="margin-top: 50px; width: auto">
+    <div id="formular" class="form-div">
+        <form>
             <h2 class="noten"><label>Kontakt</label></h2>
 
             <div class="notennn">
                 <label class="gewichtung_1"> Name*: </label>
-                <input type="text" id="form-name">
+                <div class="spalte-rechts form-control">
+                    <input type="text" id="form-name">
+                    <small>Error Message</small>
+                </div>
             </div>
 
 
                 <div class="notennn">
-                    <label class="gewichtung_1">Nachname*:</label> <br>
-                    <input id="form-nachname" type="text">
+                    <label class="gewichtung_1">Nachname*:</label>
+                    <div class="spalte-rechts form-control">
+                        <input id="form-nachname" type="text">
+                        <small>Error Message</small>
+                    </div>
                 </div>
 
 
 
             <div class="notennn">
                 <label class="gewichtung"> E-Mail*: </label>
-                <input type="text" id="form-mail">
+                <div class="spalte-rechts form-control">
+                    <input type="text" id="form-mail">
+                    <small>Error Message</small>
+                </div>
             </div>
 
-            <div class="auswahl, notennn" id="auswahl_flex">
+            <div class="notennn auswahl_flex">
                 <p class="margin_geschlecht"> Anrede:</p>
-                <div class="geschlecht_0">
+                <div class="spalte-rechts form-control"  id="radio">
+                    <div class="geschlecht_0">
                             <span>
                                 <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
                                 <label>Mann</label>
                             </span>
-                    <span>
+                        <span>
                                <input type="radio" name="fgender" value="female" onclick="selectGender(this.value)">
                                 <label>Frau</label>
                             </span>
 
+                    </div>
+                    <small>Error Message</small>
                 </div>
+
             </div>
 
-            <div class="auswahl, notennn" id="auswahl_flex">
+            <div class="notennn auswahl_flex" >
                 <p class="margin_grund">Grund:</p>
-                <div class="geschlecht">
+                <div class="spalte-rechts form-control" id="checkbox">
+                    <div class="geschlecht">
                             <span>
                                 <input name="fgrund" value="problem" id="checkbox1" type="checkbox" class="feedback">
                                 <label>Problem mit der Website</label>
                             </span>
-                    <span>
+                        <span>
                                 <input name="fgrund" value="vorschlag" id="checkbox2" type="checkbox" class="feedback">
                                 <label>Verbesserungsvorschlag</label>
                             </span>
-                    <span>
+                        <span>
                                 <input name="fgrund" value="sonstiges" id="checkbox3" type="checkbox" class="feedback">
                                 <label>Sonstiges Feeddack</label>
                             </span>
+                    </div>
+                    <small>Error Message</small>
                 </div>
+
             </div>
             <div class="notennn">
                 <label class="gewichtung_1">Nachricht*:</label>
-                <textarea id="nachricht" placeholder="Schreib uns eine Nachricht..."></textarea>
+                <div class="spalte-rechts form-control">
+                    <textarea id="nachricht" placeholder="Schreib uns eine Nachricht..."></textarea>
+                    <small>Error Message</small>
+                </div>
+
             </div>
             <input type="submit" class="rechner-button btn btn-primary" value="Abschicken">
         </form>

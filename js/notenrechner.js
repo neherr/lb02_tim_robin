@@ -84,16 +84,17 @@ const Message = document.getElementById("nachricht");
 
 // Show input error message
 function showError(input, message) {
-    console.log(input, message);
-    const formControl = input;
-    formControl.className = 'error';
-    /*const small = formControl.querySelector('small');
-    small.innerText = message;*/
+    //console.log(input, message);
+    const formControl = input.parentElement;
+    formControl.className = 'form-control error spalte-rechts';
+    const small = formControl.querySelector('small');
+    small.innerText = message;
 }
 
 // Show success outline
 function showSuccess(input) {
-    console.log("Succesfull");
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success spalte-rechts';
 }
 
 // Check email is valid
@@ -120,6 +121,18 @@ function checkRequired(inputArr) {
 
     return isRequired;
 }
+function checkGender(input){
+    if (input == undefined | null){
+        const formControl = document.getElementById("radio");
+        formControl.className = 'form-control error spalte-rechts';
+        const small = formControl.querySelector('small');
+        small.innerText = "Bitte Anrede auswählen";
+    }
+    else {
+        const formControl = document.getElementById("radio");
+        formControl.className = 'form-control success spalte-rechts';
+    }
+}
 
 // Check input length
 function checkLength(input, min, max) {
@@ -137,6 +150,31 @@ function checkLength(input, min, max) {
         showSuccess(input);
     }
 }
+function getValue() {
+    let ele=[]
+    let problem = document.getElementById("checkbox1")
+    if(problem.checked){
+        ele.push(problem.value);
+    }
+    let verbesserung = document.getElementById("checkbox2")
+    if(verbesserung.checked){
+        ele.push(verbesserung.value);
+    }
+    let sonstiges = document.getElementById("checkbox3")
+    if(sonstiges.checked){
+        ele.push(sonstiges.value);
+    }
+    if(ele.length>0){
+        const formControl = document.getElementById("checkbox");
+        formControl.className = 'form-control success spalte-rechts';
+    }
+    else{
+        const formControl = document.getElementById("checkbox");
+        formControl.className = 'form-control error spalte-rechts';
+        const small = formControl.querySelector('small');
+        small.innerText = "Bitte Grund auswählen";
+    }
+}
 
 // Get fieldname
 function getFieldName(input) {
@@ -150,37 +188,14 @@ function validateForm(){
         checkLength(Message, 5, 500);
         checkEmail(Email);
     }
-    let ele=[]
-    function getValue() {
-        let bike = document.getElementById("checkbox1")
-        if(bike.checked){
-            ele.push(bike.value);
-        }
-        let car = document.getElementById("checkbox2")
-        if(car.checked){
-            ele.push(car.value);
-        }
-        let home = document.getElementById("checkbox3")
-        if(home.checked){
-            ele.push(home.value);
-        }
-        if(ele.length>0){
-            console.log(ele);
-        }
-        else{
-            console.log("choose a reason");
-        }
-    }
-    const Gender = gender;
-    //const Grund = document.querySelector('.feedback:checked').value;
-    console.log(Name.value, Nachname.value, Email.value, Gender,getValue(), Message.value);
+    checkGender(gender)
+    getValue()
+
 }
 
 
 // Event listeners
 form.addEventListener('submit', function(e) {
-    //https://www.w3schools.com/jsref/event_preventdefault.asp
     e.preventDefault();
-    //First validate form
     validateForm();
 });
