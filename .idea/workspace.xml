@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="server side 5 validations eingebaut &amp; Client side verbessert" />
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/js/formular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formular.html" beforeDir="false" afterPath="$PROJECT_DIR$/formular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +82,8 @@
       <workItem from="1654246423055" duration="93000" />
       <workItem from="1654249935990" duration="2234000" />
       <workItem from="1654259306439" duration="2828000" />
+      <workItem from="1654266126442" duration="419000" />
+      <workItem from="1654267120192" duration="475000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -260,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654263729816</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="gitignore">
+      <created>1654266226233</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1654266226233</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +312,7 @@
     <MESSAGE value="server side validation erstellt" />
     <MESSAGE value="client side validation verbessert" />
     <MESSAGE value="server side 5 validations eingebaut &amp; Client side verbessert" />
-    <option name="LAST_COMMIT_MESSAGE" value="server side 5 validations eingebaut &amp; Client side verbessert" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>
