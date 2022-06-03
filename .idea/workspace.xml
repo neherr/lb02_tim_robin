@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="server side validation erstellt">
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="client side validation verbessert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_validation/ValidationLib.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/ValidationLib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_validation/ValidationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/ValidationService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_validation/data/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/data/registration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_validation/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,8 @@
       <workItem from="1653395423806" duration="1812000" />
       <workItem from="1653999540628" duration="5889000" />
       <workItem from="1654246423055" duration="93000" />
-      <workItem from="1654249935990" duration="1592000" />
+      <workItem from="1654249935990" duration="2234000" />
+      <workItem from="1654259306439" duration="2474000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -249,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654245849489</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="client side validation verbessert">
+      <created>1654251584177</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1654251584177</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +296,7 @@
     <MESSAGE value="github fix" />
     <MESSAGE value="push test" />
     <MESSAGE value="server side validation erstellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="server side validation erstellt" />
+    <MESSAGE value="client side validation verbessert" />
+    <option name="LAST_COMMIT_MESSAGE" value="client side validation verbessert" />
   </component>
 </project>

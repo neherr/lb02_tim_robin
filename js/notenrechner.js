@@ -198,7 +198,8 @@ function validateForm(){
     checkGender(gender)
     getValue()
     if (required == 6 && valid ==4){
-        console.log("abschicken")
+        alert("Formular wurde abgeschickt, wir bearbeiten deine Anfrage so schnell wie möglich!")
+        location.reload();
     } else console.log("nicht abschicken")
     required = 0;
     valid = 0;

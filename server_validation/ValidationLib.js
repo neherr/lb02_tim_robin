@@ -32,9 +32,6 @@ function checkEmail(id,input) {
     return result;
 }
 
-//TODO: Check article for throwing errors in node js
-// https://stackoverflow.com/questions/33086247/throwing-an-error-in-node-js
-
 // Check required fields
 function checkRequired(id, input) {
     //Default: is valid
@@ -76,9 +73,50 @@ function checkLength(id, input, min, max) {
     }
     return result;
 }
+//check Anrede input
+function checkAnrede(id, input){
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    //wenn Anrede nicht m/f ist
+    if (input == "Herr") {
+    } else if (input == "Frau") {
+    }else {
+        //ist nicht valide
+        result = {
+            isNotValid: true,
+            msg: showError(id, `${input.toString()} muss Herr oder Frau sein`)
+        }
+    }
+    return result;
+}
+
+function checkGrund(id, input){
+    //Default: is valid
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+    //wenn Grund nicht problem/vorschlag/sonstiges ist
+    if (input == "problem") {
+    } else if (input == "vorschlag") {
+    } else if (input == "sonstiges"){
+    } else {
+        //ist nicht valide
+        result = {
+            isNotValid: true,
+            msg: showError(id, `${input.toString()} muss Problem, Vorschlag oder Sonstiges sein`)
+        }
+    }
+    return result;
+}
 
 module.exports = {
     checkEmail,
+    checkAnrede,
+    checkGrund,
     checkLength,
     checkRequired
 }

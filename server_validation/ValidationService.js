@@ -40,6 +40,13 @@ function validateUser(userObj) {
     result = validateLib.checkEmail("email", userObj.email);
     if (result.isNotValid) { return result; }
 
+    //check Anrede
+    result = validateLib.checkAnrede("anrede", userObj.anrede);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkGrund("grund", userObj.grund);
+    if (result.isNotValid) { return result; }
+
     //all inputs are valid and isNotValid=false
     return false;
 }

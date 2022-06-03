@@ -74,7 +74,7 @@ app.post('/register', (req, res) => {
             .catch(error => {
                 console.error(error);
             });
-        res.status(201).send(`Kontaktanfrage von ${userObj.name} wurde gespeichert!`);
+        res.status(201).send(`Kontaktanfrage von ${userObj.anrede} ${userObj.name} ${userObj.nachname} wurde gespeichert!`);
     }
 });
 
