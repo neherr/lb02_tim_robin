@@ -81,6 +81,8 @@ const Name = document.getElementById("form-name");
 const Nachname = document.getElementById("form-nachname");
 const Email = document.getElementById("form-mail");
 const Message = document.getElementById("nachricht");
+let valid = 0;
+let required = 0;
 
 // Show input error message
 function showError(input, message) {
@@ -102,6 +104,7 @@ function checkEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
         showSuccess(input);
+        valid+=1;
     } else {
         showError(input, 'Email is not valid');
     }
@@ -116,6 +119,7 @@ function checkRequired(inputArr) {
             isRequired = true;
         } else {
             showSuccess(input);
+            required+=1;
         }
     });
 
@@ -131,6 +135,7 @@ function checkGender(input){
     else {
         const formControl = document.getElementById("radio");
         formControl.className = 'form-control success spalte-rechts';
+        required+=1;
     }
 }
 
@@ -148,6 +153,7 @@ function checkLength(input, min, max) {
         );
     } else {
         showSuccess(input);
+        valid+=1;
     }
 }
 function getValue() {
@@ -167,6 +173,7 @@ function getValue() {
     if(ele.length>0){
         const formControl = document.getElementById("checkbox");
         formControl.className = 'form-control success spalte-rechts';
+        required+=1;
     }
     else{
         const formControl = document.getElementById("checkbox");
@@ -190,7 +197,11 @@ function validateForm(){
     }
     checkGender(gender)
     getValue()
-
+    if (required == 6 && valid ==4){
+        console.log("abschicken")
+    } else console.log("nicht abschicken")
+    required = 0;
+    valid = 0;
 }
 
 

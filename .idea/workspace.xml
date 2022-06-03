@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="Formular abschicken geht">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_validation/UserRepository.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_validation/ValidationLib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_validation/ValidationService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_validation/data/registration.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_validation/server.js" afterDir="false" />
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="server side validation erstellt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_validation/data/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/data/registration.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/robin/Hut.ch AG/Hut.ch AG - Dokumente (1)/01_Firma intern/2.0 Angestellte/Robin/Schule/informatik/modul 307/lb02_tim_robin/server_validation",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/robin/Hut.ch AG/Hut.ch AG - Dokumente (1)/01_Firma intern/2.0 Angestellte/Robin/Schule/informatik/modul 307/lb02_tim_robin&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\robin\Hut.ch AG\Hut.ch AG - Dokumente (1)\01_Firma intern\2.0 Angestellte\Robin\Schule\informatik\modul 307\lb02_tim_robin\server_validation" />
@@ -81,6 +78,8 @@
       <workItem from="1653325136761" duration="958000" />
       <workItem from="1653395423806" duration="1812000" />
       <workItem from="1653999540628" duration="5889000" />
+      <workItem from="1654246423055" duration="93000" />
+      <workItem from="1654249935990" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653398381830</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="server side validation erstellt">
+      <created>1654245849489</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1654245849489</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +284,7 @@
     <MESSAGE value="kek" />
     <MESSAGE value="github fix" />
     <MESSAGE value="push test" />
-    <option name="LAST_COMMIT_MESSAGE" value="push test" />
+    <MESSAGE value="server side validation erstellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="server side validation erstellt" />
   </component>
 </project>
