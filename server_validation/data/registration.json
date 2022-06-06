@@ -1,3 +1,29 @@
 [
-
+  {
+    "id": "e84f2cae-85a5-4f4e-8213-d5867679953b",
+    "name": "Robin",
+    "nachname": "Neher",
+    "email": "neherr@bzz.ch",
+    "anrede": "Herr",
+    "grund": "sonstiges",
+    "nachricht": "Website funktioniert nicht"
+  },
+  {
+    "id": "4aa4b161-64a4-4f0f-ba82-97c3296c5862",
+    "name": "Tim",
+    "nachname": "Federspiel",
+    "email": "neherr@bzz.ch",
+    "anrede": "Herr",
+    "grund": "sonstiges",
+    "nachricht": "Website funktioniert nicht"
+  },
+  {
+    "id": "7cacd9a9-5009-4b76-8566-8cc5a8a40d4c",
+    "name": "Robin",
+    "nachname": "Neher",
+    "email": "neherr@bzz.ch",
+    "anrede": "Herr",
+    "grund": "sonstiges",
+    "nachricht": "Website funktioniert nicht"
+  }
 ]

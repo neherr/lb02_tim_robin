@@ -3,18 +3,17 @@ let gender;
 function selectGender(selection) {
     gender = selection;
 }
-
+//deklarieren der versch. input variables
 const form = document.getElementById('formular');
-const Name = document.getElementById("form-name");
-const Nachname = document.getElementById("form-nachname");
-const Email = document.getElementById("form-mail");
+const Name = document.getElementById("name");
+const Nachname = document.getElementById("nachname");
+const Email = document.getElementById("email");
 const Message = document.getElementById("nachricht");
-let valid = 0;
-let required = 0;
+let isValid = true;
 
 // Anzeigen der Fehlermeldung
 function showError(input, message) {
-    //console.log(input, message);
+    isValid = false;
     const formControl = input.parentElement;
     formControl.className = 'form-control error spalte-rechts';
     const small = formControl.querySelector('small');
@@ -32,9 +31,8 @@ function checkEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
         showSuccess(input);
-        valid+=1;
     } else {
-        showError(input, 'Email is not valid');
+        showError(input, 'Email ist nicht korrekt');
     }
 }
 
@@ -43,11 +41,10 @@ function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function(input) {
         if (input.value.trim() === '') {
-            showError(input, `${getFieldName(input)} is required`);
+            showError(input, `${getFieldName(input)} muss ausgefüllt sein`);
             isRequired = true;
         } else {
             showSuccess(input);
-            required+=1;
         }
     });
 
@@ -64,7 +61,6 @@ function checkGender(input){
     else {
         const formControl = document.getElementById("radio");
         formControl.className = 'form-control success spalte-rechts';
-        required+=1;
     }
 }
 
@@ -73,16 +69,15 @@ function checkLength(input, min, max) {
     if (input.value.length < min) {
         showError(
             input,
-            `${getFieldName(input)} must be at least ${min} characters`
+            `${getFieldName(input)} muss mindestens ${min} Zeichen sein`
         );
     } else if (input.value.length > max) {
         showError(
             input,
-            `${getFieldName(input)} must be less than ${max} characters`
+            `${getFieldName(input)} muss weniger als ${max} Zeichen sein`
         );
     } else {
         showSuccess(input);
-        valid+=1;
     }
 }
 // Ausgewählten Grund prüfen und auswerten
@@ -103,7 +98,6 @@ function getValue() {
     if(ele.length>0){
         const formControl = document.getElementById("checkbox");
         formControl.className = 'form-control success spalte-rechts';
-        required+=1;
     }
     else{
         const formControl = document.getElementById("checkbox");
@@ -120,22 +114,21 @@ function getFieldName(input) {
 // beim Abschicken des Forms benutzte Functions
 function validateForm(){
     if(!checkRequired([Name, Email, Nachname, Message])){
-        checkLength(Name, 3, 15);
-        checkLength(Nachname, 3, 25);
+        checkLength(Name, 2, 20);
+        checkLength(Nachname, 2, 20);
         checkLength(Message, 5, 500);
         checkEmail(Email);
     }
     checkGender(gender)
     getValue()
-    if (required == 6 && valid ==4){
-        alert("Formular wurde abgeschickt, wir bearbeiten deine Anfrage so schnell wie möglich!")
-        location.reload();
-    } else console.log("nicht abschicken")
-    required = 0;
-    valid = 0;
+
+    if (isValid == true) {
+        alert(`Danke für Ihre Kontakt Anfrage ${gender} ${Name.value} ${Nachname.value}, Sie werden schnellst möglich von uns hören!`)
+    }else {
+        console.log("nicht abgeschickt!");
+        isValid = true;
+    }
 }
-
-
 // Event listeners
 form.addEventListener('submit', function(e) {
     e.preventDefault();

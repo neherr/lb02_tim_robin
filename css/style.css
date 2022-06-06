@@ -406,6 +406,7 @@ form{
     border: none;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 50%;
 }
 
@@ -427,4 +428,7 @@ form{
 }
 .form-control.success textarea{
     border-color: lime;
+}
+small{
+    margin-top: 7px;
 }

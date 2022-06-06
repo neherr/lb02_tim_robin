@@ -52,10 +52,29 @@
         <form>
             <h2 class="noten"><label>Kontakt</label></h2>
 
+            <div class="notennn auswahl_flex">
+                <p class="margin_geschlecht"> Anrede:</p>
+                <div class="spalte-rechts form-control"  id="radio">
+                    <div class="geschlecht_0">
+                            <span>
+                                <input type="radio" name="fgender" value="Herr" onclick="selectGender(this.value)">
+                                <label>Herr</label>
+                            </span>
+                        <span>
+                               <input type="radio" name="fgender" value="Frau" onclick="selectGender(this.value)">
+                                <label>Frau</label>
+                            </span>
+
+                    </div>
+                    <small>Error Message</small>
+                </div>
+
+            </div>
+
             <div class="notennn">
                 <label class="gewichtung_1"> Name*: </label>
                 <div class="spalte-rechts form-control">
-                    <input type="text" id="form-name">
+                    <input type="text" id="name">
                     <small>Error Message</small>
                 </div>
             </div>
@@ -64,7 +83,7 @@
                 <div class="notennn">
                     <label class="gewichtung_1">Nachname*:</label>
                     <div class="spalte-rechts form-control">
-                        <input id="form-nachname" type="text">
+                        <input id="nachname" type="text">
                         <small>Error Message</small>
                     </div>
                 </div>
@@ -74,28 +93,9 @@
             <div class="notennn">
                 <label class="gewichtung"> E-Mail*: </label>
                 <div class="spalte-rechts form-control">
-                    <input type="text" id="form-mail">
+                    <input type="text" id="email">
                     <small>Error Message</small>
                 </div>
-            </div>
-
-            <div class="notennn auswahl_flex">
-                <p class="margin_geschlecht"> Anrede:</p>
-                <div class="spalte-rechts form-control"  id="radio">
-                    <div class="geschlecht_0">
-                            <span>
-                                <input type="radio" name="fgender" value="male" onclick="selectGender(this.value)">
-                                <label>Mann</label>
-                            </span>
-                        <span>
-                               <input type="radio" name="fgender" value="female" onclick="selectGender(this.value)">
-                                <label>Frau</label>
-                            </span>
-
-                    </div>
-                    <small>Error Message</small>
-                </div>
-
             </div>
 
             <div class="notennn auswahl_flex" >

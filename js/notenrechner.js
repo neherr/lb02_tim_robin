@@ -3,13 +3,8 @@ let note1 = 0, note2 = 0, note3 = 0;
 let gewichtung1 = 1, gewichtung2 = 1, gewichtung3 = 1;
 let resultat = 0;
 
-
-
 function note_berechnen(){
-
-    /**Mit dieser Funktion werden die eingegebenen Noten und Gewichtungen in JS variablen umgewandelt.
-     */
-
+    // hier werden die eingegebenen Noten und Gewichtungen in JS variablen umgewandelt.
     note1 = Number(document.getElementById("note-1").value);
     note2 = Number(document.getElementById("note-2").value);
     note3 = Number(document.getElementById("note-3").value);

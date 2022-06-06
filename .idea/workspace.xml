@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="gitignore">
-      <change afterPath="$PROJECT_DIR$/js/formular.js" afterDir="false" />
+    <list default="true" id="fb383e03-e6ca-431b-a26a-ef0c9f4e6bf5" name="Default Changelist" comment="client validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formular.html" beforeDir="false" afterPath="$PROJECT_DIR$/formular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formular.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/formular.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/notenrechner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/notenrechner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_validation/data/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/server_validation/data/registration.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,27 +29,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1t1nlnYOx9pY781sPnh8LQ4Czt5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/robin/Hut.ch AG/Hut.ch AG - Dokumente (1)/01_Firma intern/2.0 Angestellte/Robin/Schule/informatik/modul 307/lb02_tim_robin&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\robin\Hut.ch AG\Hut.ch AG - Dokumente (1)\01_Firma intern\2.0 Angestellte\Robin\Schule\informatik\modul 307\lb02_tim_robin\server_validation" />
       <recent name="C:\Users\tlfed\WebstormProjects\lb02_tim_robin\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\robin\Hut.ch AG\Hut.ch AG - Dokumente (1)\01_Firma intern\2.0 Angestellte\Robin\Schule\informatik\modul 307\lb02_tim_robin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,12 +79,9 @@
       <workItem from="1653051282913" duration="3403000" />
       <workItem from="1653325136761" duration="958000" />
       <workItem from="1653395423806" duration="1812000" />
-      <workItem from="1653999540628" duration="5889000" />
-      <workItem from="1654246423055" duration="93000" />
-      <workItem from="1654249935990" duration="2234000" />
-      <workItem from="1654259306439" duration="2828000" />
-      <workItem from="1654266126442" duration="419000" />
-      <workItem from="1654267120192" duration="475000" />
+      <workItem from="1653999540628" duration="5920000" />
+      <workItem from="1654023999984" duration="44000" />
+      <workItem from="1654188396398" duration="5719000" />
     </task>
     <task id="LOCAL-00001" summary="fjdkjfid">
       <created>1622547005459</created>
@@ -246,35 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653398381830</updated>
     </task>
-    <task id="LOCAL-00024" summary="server side validation erstellt">
-      <created>1654245849489</created>
+    <task id="LOCAL-00024" summary="client validation">
+      <created>1654005484277</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1654245849489</updated>
+      <updated>1654005484277</updated>
     </task>
-    <task id="LOCAL-00025" summary="client side validation verbessert">
-      <created>1654251584177</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1654251584177</updated>
-    </task>
-    <task id="LOCAL-00026" summary="server side 5 validations eingebaut &amp; Client side verbessert">
-      <created>1654263729816</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1654263729816</updated>
-    </task>
-    <task id="LOCAL-00027" summary="gitignore">
-      <created>1654266226233</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1654266226233</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,10 +286,7 @@
     <MESSAGE value="kek" />
     <MESSAGE value="github fix" />
     <MESSAGE value="push test" />
-    <MESSAGE value="server side validation erstellt" />
-    <MESSAGE value="client side validation verbessert" />
-    <MESSAGE value="server side 5 validations eingebaut &amp; Client side verbessert" />
-    <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="client validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="client validation" />
   </component>
 </project>
